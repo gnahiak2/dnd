@@ -1,0 +1,30 @@
+{
+  "name": "@lanternkeep/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "typecheck": "tsc --noEmit -p .",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "@fastify/static": "^10.1.10",
+    "@fastify/websocket": "^11.3.7",
+    "@lanternkeep/protocol": "workspace:*",
+    "@lanternkeep/rules": "workspace:*",
+    "@lanternkeep/srd-data": "workspace:*",
+    "better-sqlite3": "^13.1.1",
+    "drizzle-orm": "^0.45.4",
+    "fastify": "^5.12.8",
+    "nanoid": "^6.0.2",
+    "ws": "^8.22.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/ws": "^8.18.2",
+    "drizzle-kit": "^0.31.11"
+  }
+}

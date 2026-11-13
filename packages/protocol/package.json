@@ -1,0 +1,16 @@
+{
+  "name": "@lanternkeep/protocol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@lanternkeep/rules": "workspace:*",
+    "zod": "^4.6.7"
+  }
+}
